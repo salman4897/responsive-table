@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standered Table</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+
+
+
+.container{
+
+display: flex;
+justify-content: space-around;
+padding: 10px;
+
+}
+
+.img{
+
+height: 150px;
+width: 150px;
+
+}
+
+.heading{
+    color:#374659;
+    font-weight: 600;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.pera{
+    color: #535B61;
+    font-weight: 400;
+    text-align:center;
+    font-size: 17px;
+    padding: 5px; 
+     
+}
+
+.card{
+   
+    color: #535B61;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact{
+   
+    display: flex;
+    width: 78%;
+    justify-content: space-around;
+    /* border: dimgrey solid 2px; */
+    border-radius: 5px;
+    box-shadow: 1.5px 1.5px 2px 1px #b6b4b4;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;   
+
+}
+.firstrow{
+    font-weight: 600;
+}
+.details{
+    font-weight: 600;
+}
+th,td {
+    text-align: center;
+    padding: 15px;
+   
+    margin-top: 10px;
+}
+
+
+tr:nth-child(1) {
+    color: #fff;
+    background: #F73E4C;
+    
+}
+
+tr:nth-child(even) {
+    background-color:#ECECEC;
+}
+
+/* tr:hover {
+    background-color: #ddd;
+} */
+
+.invoice{
+    font-weight: 400;
+}
+
+  
+@media only screen and (max-width: 768px) {
+
+  
+
+    .contact{
+
+    width: 88%;
+
+    }
+    .container{
+align-items: center;
+  flex-direction: column;
+    }
+.card, .table{
+margin: auto;
+    width: 90%;
+
+}
+.details{
+    font-weight: 800;
+    font-size: 12px;
+}
+.contact{
+    font-size: 12px;
+    gap: 20px;
+  
+  
+}
+.firstrow{
+    font-size: 12px;
+}
+
+  
+
+
+
+  }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- first section start -->
+
+    <section>
+      <div class="container">
+        <div class="first">
+          <img class="img" src="copy cup.jpg" alt="" />
+        </div>
+
+        <div class="second">
+          <h1 class="heading">Daily Reseller INC.</h1>
+          <p class="pera">84/3 Stirling Road, Dhaka, Bangladesh</p>
+          <p class="pera">Email: Shop@example.com</p>
+          <p class="pera">Phone:+1954954954</p>
+        </div>
+
+        <div class="third">
+          <p class="pera">Invoice:100</p>
+          <p class="pera">Date:-/-/-</p>
+          <p class="pera">Status</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- first section end -->
+
+    <!-- second section start -->
+
+    <section class="card">
+      <div class="contact">
+        <div class="first">
+          <h3 class="details">Customer Name:</h3>
+          <p>Mr Jhon Example</p>
+        </div>
+
+        <div class="second">
+          <h3 class="details">Phone:</h3>
+          <p>Phone:+1954954954</p>
+        </div>
+
+        <div class="third">
+          <h3 class="details">Address:</h3>
+          <p>Any Example Address</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section end -->
+
+    <!-- third section start -->
+    <section class="section-2">
+      <table>
+        <tr class="firstrow">
+          <th>#</th>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Unit Cost</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Example Product</td>
+          <td>2</td>
+          <td>100.00</td>
+          <td>200.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Example Product</td>
+          <td>4</td>
+          <td>300.00</td>
+          <td>500.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Example Product</td>
+          <td>6</td>
+          <td>500.00</td>
+          <td>800.00</td>
+        </tr>
+        
+      </table>
+    </section>
+    <!-- third section end -->
+  </body>
+</html>
